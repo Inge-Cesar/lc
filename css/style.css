@@ -9729,9 +9729,14 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .bg-gallery {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery.jpg), no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carruselprincipal.jpg) no-repeat center center;
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center center; /* Alinea la imagen al centro */
+  background-attachment: fixed; /* Hace que la imagen permanezca fija al hacer scroll */
+  height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la ventana */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
 }
+
 
 .gallery-carousel .owl-nav {
   position: absolute;
